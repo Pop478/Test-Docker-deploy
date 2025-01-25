@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000
 
 app.use(cors())
 
-app.get('/api/data', async (req, res) => {
+app.get('/data', async (req, res) => {
     try {
         const response = await db.query(
             `SELECT user_id, first_name, last_name, status 
