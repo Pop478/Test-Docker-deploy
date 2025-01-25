@@ -24,7 +24,7 @@ services:
         volumes:
             - ./letsencrypt:/etc/letsencrypt
             - ./www:/var/www/html
-        command: certonly --webroot --webroot-path=/var/www/html --email stepanpavlovsky@mail.com --agree-tos --no-eff-email -d test.world-itech.ru
+        command: certonly --webroot --webroot-path=/var/www/html --email stepanpavlovsky@mail.com --agree-tos --no-eff-email -d marusinohome.ru
 
     frontend:
         build:
